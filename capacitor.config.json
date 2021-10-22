@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "LoginIonic",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
