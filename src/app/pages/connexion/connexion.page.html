@@ -1,0 +1,51 @@
+<ion-header class="ion-border">
+  <ion-toolbar>
+      <ion-title>connxion</ion-title>
+  </ion-toolbar>
+  <ion-button slot="start">
+      <ion-back-button defaulthref="login" text="">
+
+      </ion-back-button>
+  </ion-button>
+</ion-header>
+<ion-content>
+  <ion-card class="ion-no-margin">
+      <ion-img src="assets/images/header2.jpg"></ion-img>
+  </ion-card>
+  <ion-card-content>
+    <form class="form" #form="ngForm" (ngSubmit)="signUp(form)">
+      <div class="wrapform">
+          <ion-item>
+          <ion-input type="email" name="email" ngModel placeholder ="Email" required></ion-input>
+          <ion-icon name="mail-outline"></ion-icon>
+          </ion-item>
+          <ion-item>
+          <ion-input type="password" name="password" ngModel placeholder ="**********"required></ion-input>
+          <ion-icon name="lock-closed-outline"></ion-icon>
+          </ion-item>
+          </div>
+          <div class="password-forgot">
+              <ion-button fill="clear" class="ion-no-padding" type="submit"(click)="omi()">MOT DE PASSE OUBLIER?</ion-button>
+          </div>
+          <div class="sign-btn-wrap">
+              <ion-button shape="round"fill="solid"class="sign-btn" type="submit">CONNEXION</ion-button>
+          </div>
+          </form>
+          
+          <div class="text-tag"> <span>ou via les réseaux sociaux</span>
+          </div>
+  
+          <div class="social-btns">
+              <ion-button fill="clear" class="facebookbtn -ion-no-padding">
+                <ion-icon name="logo-google"></ion-icon>
+              </ion-button>
+              <ion-button fill="clear" class="facebookbtn -ion-no-padding">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </ion-button>
+          </div>
+  <div class="ion-card-footer">
+      <span>vous n'avez pas de compte ?</span><ion-button class="ion-no-padding" type='submit'(click)='insc()'>INSCRIRE</ion-button>
+      
+  </div>
+</ion-card-content>
+</ion-content>           
